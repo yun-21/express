@@ -5,7 +5,7 @@ const port = 8080;
 
 //핸들바 뷰 엔진 설정
 app.engine('handlebars', test({
-    defaultLayout : 'main',
+    defaultLayout : 'logo',
 }))
 app.set('view engine', 'handlebars')
 
