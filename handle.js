@@ -1,10 +1,10 @@
 const express = require('express')
-const expressHandlebars = require('express-handlebars')
+const {engine : test} = require('express-handlebars')
 const app = express()
 const port = 8080;
 
 //핸들바 뷰 엔진 설정
-app.engine('handlebars', expressHandlebars({
+app.engine('handlebars', test({
     defaultLayout : 'main',
 }))
 app.set('view engine', 'handlebars')
