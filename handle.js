@@ -14,7 +14,7 @@ const fortunes = [
 
 //핸들바 뷰 엔진 설정
 app.engine('handlebars', test({
-    defaultLayout : 'main',
+    defaultLayout : 'fortunes',
 }))
 app.set('view engine', 'handlebars')
 
