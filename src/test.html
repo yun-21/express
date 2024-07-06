@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOMContentLoaded Example</title>
+</head>
+<body>
+  <h1 id="header">Hello, World!</h1>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.getElementById('header');
+      header.textContent = 'Hello, DOMContentLoaded!';
+      console.log('DOM fully loaded and parsed');
+    });
+  </script>
+</body>
+</html>
